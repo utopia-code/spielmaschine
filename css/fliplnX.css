@@ -1,0 +1,87 @@
+
+@-webkit-keyframes flipInX {
+  from {
+    -webkit-transform: perspective(900px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(900px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(900px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(900px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(900px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(900px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(900px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(900px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(900px);
+    transform: perspective(900px);
+  }
+}
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(900px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(900px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(900px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(900px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(900px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(900px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(900px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(900px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(900px);
+    transform: perspective(900px);
+  }
+}
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+  /*animation-delay: 1s;
+  animation-duration: 1.5s;*/
+  animation-iteration-count: 1;
+}
+#container1 .flipInX {
+    animation-duration: 1.5s;
+}
+
+#container2 .flipInX {
+     animation-duration: 1.7s;
+}
+
+#container3 .flipInX {
+    animation-duration: 2s;
+  }

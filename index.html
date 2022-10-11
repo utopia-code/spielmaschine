@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Spielmachine
+        </title>
+        <meta charset="utf-8">
+        
+        <script src="js/javascript.js"></script>
+		
+        <link rel="stylesheet" href="css/fliplnX.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <div id="struktur">
+            <h1>F O T O A U T O M A T</h1>
+            
+            <div id="rahmen">
+                <h3 id="message" class="message" onclick="start()">zum<br><br> <span>S T A R T </span><br><br>anklicken</h3>
+                <div id="container1"></div>
+                <div id="container2"></div> 
+                <div id="container3"></div> 
+                
+            </div>
+            
+            <ul>
+                <li><button id="klick1" disabled>Klick Bild 1</button></li>
+                <li><button id="klick2" disabled>Klick Bild 2</button></li>
+                <li><button id="klick3" disabled>Klick Bild 3</button></li>
+                <li><button id="spiel" onclick="spiel()" disabled>S P I E L E N</button></li>
+                <li><div id="counter">Zähler: 0</div></li>
+                <li><div id="praemium">Punkte: 150</div></li>
+            </ul>
+        </div>
+    </body>
+</html>

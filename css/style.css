@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media screen and (min-device-width : 100px) and (max-device-width: 600px) and (orientation: portrait)
+{
+    h1 {
+        font-size: 90px !important;  
+        letter-spacing: 0.5vh !important;  
+     }
+    #rahmen {
+        max-width: 90% !important;
+        top: 125px !important;
+    }
+    h3 {
+        font-size: 80px !important;
+    }
+    #counter{
+        line-height: 100px !important;
+        font-size: 35px !important;
+    }
+    #praemium{
+        line-height: 100px !important;
+        font-size: 35px !important;
+    }
+    ul{
+        flex-wrap: wrap !important;
+    }
+    li {
+        flex:auto !important;
+        width: calc(100% / 3) !important;
+        border-top: 2px solid #fff;
+        
+    }
+    button {
+        line-height: 100px !important;
+        font-size: 35px !important;
+    }
+    li:nth-of-type(2){
+        border-right: 0;
+    }
+    li:nth-of-type(4){
+        border-right: 0;
+    }
+}
+@media screen and (min-device-width : 601px) and (max-device-width: 800px) and (orientation: portrait)
+{
+    h1 {
+        font-size: 300% !important;  
+        letter-spacing: 0.8vh !important;  
+     }
+    #rahmen {
+        max-width: 85% !important;
+        top: 85px !important;
+    }
+    h3 {
+        font-size: 200% !important;
+    }
+}
+@media screen and (min-width: 100px)
+{
+    body{
+        max-width: 1000px;
+        max-height: 1000px;
+        margin:auto;
+    }
+    #struktur{
+        width: 100%;
+        height: 100%;
+    }
+    h1 {
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        font-family: 'Iceland', cursive;
+        font-size: 400%;
+        text-align: center;
+        color: darkcyan;
+        letter-spacing: 1.3vh;
+        background-color: #ddd;
+
+    }
+    #rahmen {
+        max-width: 75%;
+        max-height: 75%;
+        margin: 0 auto;
+        position: relative;
+        top: 100px;
+        left: 0;
+    }
+    h3 {
+        position:absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 80%;
+        background-color:#fff;
+        color:deeppink;
+        font-family: 'Iceland', cursive;
+        font-size: 250%;
+        text-align: center;
+        padding: 20% 0 0;
+        opacity: 1;
+        -webkit-transition-property: opacity;
+        -webkit-transition-duration: 2s;
+        -webkit-transition-delay: 1s;
+        transition-property: opacity;
+        transition-duration: 1s;
+        transition-delay: 1s;
+    }
+    h3 span {
+        font-size: 300%;
+    }
+    #container1 {
+        width: 100%;
+        overflow: hidden;
+    }
+    #container2 {
+        width: 100%;
+        overflow: hidden;
+    }
+    #container2 {
+        width: 100%;
+        overflow: hidden;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .ausblenden{
+        display: none;
+    }
+    #counter{
+        line-height: 50px;
+        font-size: 15px;
+        text-align: center;
+        background-color:darkkhaki;
+        color: deeppink;
+        font-weight: bold;
+        width: 100%;
+    }
+    #praemium{
+        background-color:darkkhaki;
+        line-height: 50px;
+        font-size: 15px;
+        text-align: center;
+        color: deeppink;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    ul{
+        list-style: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    li {
+        flex-basis:16.5%;
+        border-right: 2px solid #fff;
+
+     }
+    li:last-child{
+        border-right: none;
+    }
+    button {
+        line-height: 50px;
+        font-size: 15px;
+        background-color: darkseagreen;
+        color: deeppink;
+        font-weight: bold;
+        border: none;
+        width: 100%;
+    }
+    button:disabled {
+        color: #ccc;
+    }
+    button:hover:enabled {
+        cursor: pointer;
+    }
+    button:active:enabled {
+        cursor: pointer;
+    }
+    #spiel{
+        background-color: deeppink;
+        color: darkkhaki;
+        font-weight: bold;
+    }
+    #spiel:disabled {
+        background-color: #ffa1d3;
+        color: darkseagreen;
+    }
+}
